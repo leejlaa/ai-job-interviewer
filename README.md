@@ -1,8 +1,8 @@
-![Alt text](assets/image.png)
+![Alt text](frontend/assets/image.png)
 
 After inputing a wrong answer:
 
-![Alt text](assets/image2.png)
+![Alt text](frontend/assets/image2.png)
 
 
 
