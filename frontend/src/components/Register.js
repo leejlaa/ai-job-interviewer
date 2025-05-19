@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import API from '../api';
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
   const [form, setForm] = useState({ username: '', email: '', password: '' });
   const [message, setMessage] = useState('');
-
+  const navigate = useNavigate();
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -16,6 +17,8 @@ function Register() {
         withCredentials: true
       });
       setMessage(res.data.message);
+      setForm({ username: '', email: '', password: '' });
+      navigate('/login'); // Redirect to login page after successful registration
     } catch (err) {
       setMessage(err.response?.data?.error || 'Something went wrong');
     }

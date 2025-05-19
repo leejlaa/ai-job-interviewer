@@ -1,4 +1,5 @@
 mongod --dbpath=/Users/lejladoric/Desktop/mern-smart-interviewer/mongodb-data
+
 mongosh
 
 cd backend

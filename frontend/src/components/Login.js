@@ -20,6 +20,7 @@ function Login() {
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('userId', res.data.user.id);
       setMessage('✅ Login successful!');
+      login(res.data.token, res.data.user.id); // Call the login function from AuthContext
       navigate('/interview');
     } catch (err) {
       setMessage(err.response?.data?.error || 'Login failed');
