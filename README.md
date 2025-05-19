@@ -4,7 +4,7 @@ After inputing a wrong answer:
 
 ![Alt text](frontend/assets/image2.png)
 
-
+Implemented Login and Register pages with protecting the Interview page, plan to deploy.
 
 Project setup I used:
 
